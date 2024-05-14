@@ -7,7 +7,7 @@ const projects = [
     name: "Alien invasion short film",
     description: "Made a short film showcasing a true alien invasion",
     period: "Spring 2024",
-    videoUrl: "/alien-movie.mov" // Ensure this is the correct path to your video file
+    videoUrl: "https://www.youtube.com/embed/pS3sT_5OK6g" // Replace YOUR_VIDEO_ID with the actual YouTube video ID
   }
   // Add more projects as needed
 ];
@@ -36,9 +36,16 @@ export default function Projects() {
               <p>{project.description}</p>
             </div>
             <div className="w-1/2">
-              <video src={project.videoUrl} controls width="100%" style={{ maxWidth: '500px' }}>
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                width="100%"
+                height="315"
+                src={project.videoUrl}
+                title={project.name}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ maxWidth: '500px' }}
+              ></iframe>
             </div>
           </div>
         ))}
