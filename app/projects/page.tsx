@@ -7,7 +7,13 @@ const projects = [
     name: "Alien invasion short film",
     description: "Made a short film showcasing a true alien invasion",
     period: "Spring 2024",
-    videoUrl: "https://www.youtube.com/embed/pS3sT_5OK6g" // Replace YOUR_VIDEO_ID with the actual YouTube video ID
+    videoUrl: "https://www.youtube.com/embed/pS3sT_5OK6g"
+  },
+  {
+    name: "The Intrusion",
+    description: "Made a short film with an intrusion",
+    period: "Summer 2023",
+    videoUrl: "https://www.youtube.com/embed/sLXpMhrMEa0"
   }
   // Add more projects as needed
 ];
@@ -37,6 +43,7 @@ export default function Projects() {
             </div>
             <div className="w-1/2">
               <iframe
+                key={index}
                 width="100%"
                 height="315"
                 src={project.videoUrl}
@@ -53,3 +60,4 @@ export default function Projects() {
     </div>
   );
 }
+
