@@ -15,7 +15,7 @@ const items: Item[] = [
   {
     id: 1,
     name: "Starwars Poster: Darth Vader v.s. The Mandalorian",
-    imageUrl: "/starwars2.jpg",
+    imageUrl: "/Starwars2.jpg",
     price: 29.99,
     quantity: 2,
     size: "8x10 inches"
@@ -23,7 +23,7 @@ const items: Item[] = [
   {
     id: 2,
     name: "Starwars Poster: Darth Vader v.s. General Grievous",
-    imageUrl: "/starwars1.jpg",
+    imageUrl: "/Starwars1.jpg",
     price: 29.99,
     quantity: 4,
     size: "8x10 inches"
@@ -112,4 +112,5 @@ const Items: React.FC = () => {
 }
 
 export default Items;
+
 
